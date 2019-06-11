@@ -25,6 +25,7 @@ class Api::ItemsController < ApplicationController
       render json: @item
     else
       render json: @item.errors, status: 422
+    end
   end
 
   def destroy
